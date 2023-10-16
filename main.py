@@ -17,7 +17,7 @@ with open(output_file, 'a') as output:
     # Iterate through each .vhd file and append its contents to the output file
     for vhd_file in vhd_files:
         with open(os.path.join(folder_path, vhd_file), 'r') as file:
-            output.write(f"Contents of {vhd_file}:\n")
+            output.write(f"Contents of {vhd_file}:\n----------------------------------------------------------------------------------\n")
             output.write(file.read())
             output.write("\n\n")
 
