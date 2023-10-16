@@ -6,6 +6,9 @@ folder_path = "./files"
 # Name of the output .txt file
 output_file = "output.txt"
 
+# Clear the output file
+open(output_file, 'w').close()
+
 # Open the output file in append mode
 with open(output_file, 'a') as output:
     # List all files in the folder
